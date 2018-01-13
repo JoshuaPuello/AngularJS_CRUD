@@ -126,7 +126,7 @@ app.controller("myCtrl", function($scope, localStorageService, $ngConfirm){
     };
 
     $scope.redirect = function(){
-        window.location = "#/page.html";
+        window.location = "#!";
     }
 
     $scope.notification = function(title_1,content_1,color_1){
