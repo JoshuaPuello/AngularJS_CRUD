@@ -1,0 +1,23 @@
+<h3 style="color:red; text-align:center">Editar empleado</h3>
+<br>
+<div class="form-group">
+  <select class="form-control" ng-model="selectedE" id="select">
+    <option ng-repeat="x in data" value="{{ x.nombre }}">{{ x.nombre }}</option>
+  </select>
+</div>
+<br>
+<form action="">
+    <div class="form-group">
+        <label for="">Nombre</label>
+        <input type="text" class="form-control" ng-model="editNombre">
+    </div>
+    <div class="form-group">
+        <label for="">Edad</label>
+        <input type="text" class="form-control" ng-model="editEdad">
+    </div>
+    <div class="form-group">
+        <label for="">Salario</label>
+        <input type="text" class="form-control" ng-model="editSalario">
+    </div>
+    <button class="btn btn-success" ng-click="editData()">Guardar cambios</button>
+</form>
